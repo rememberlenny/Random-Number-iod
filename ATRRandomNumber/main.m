@@ -15,6 +15,7 @@ int main(int argc, const char * argv[]) {
         [randomArray addObject: @"one"];
         [randomArray addObject: @"two"];
         [randomArray addObject: @"three"];
+        [randomArray insertObject: @"zero" atIndex: 0];
     }
     return 0;
 }
