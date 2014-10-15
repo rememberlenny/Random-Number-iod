@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface ATRItem : NSObject
+{
+    NSString *_itemName;
+    NSString *_serialNumber;
+    NSDate *_dateCreated;
+    int _valueInDollars;
+}
 
 @end
