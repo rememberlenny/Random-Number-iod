@@ -11,6 +11,8 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSMutableArray *randomArray = [[NSMutableArray alloc] init];
+        
+        [randomArray addObject: @"one"];
     }
     return 0;
 }
