@@ -13,6 +13,8 @@ int main(int argc, const char * argv[]) {
         NSMutableArray *randomArray = [[NSMutableArray alloc] init];
         
         [randomArray addObject: @"one"];
+        [randomArray addObject: @"two"];
+        [randomArray addObject: @"three"];
     }
     return 0;
 }
