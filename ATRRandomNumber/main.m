@@ -17,6 +17,10 @@ int main(int argc, const char * argv[]) {
         [randomArray addObject: @"three"];
         [randomArray insertObject: @"zero" atIndex: 0];
         
+        for (NSString *randomString in randomArray){
+            
+        }
+        
         randomArray = nil;
     }
     return 0;
