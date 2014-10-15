@@ -18,7 +18,7 @@ int main(int argc, const char * argv[]) {
         [randomArray insertObject: @"zero" atIndex: 0];
         
         for (NSString *randomString in randomArray){
-            
+            NSLog(@"String is %@", randomString);
         }
         
         randomArray = nil;
