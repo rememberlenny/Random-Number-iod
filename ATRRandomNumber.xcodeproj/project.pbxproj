@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		03292F3019EEB1AC0074DEEE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03292F2F19EEB1AC0074DEEE /* main.m */; };
+		03292F3819EEC34D0074DEEE /* ATRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03292F3719EEC34D0074DEEE /* ATRItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		03292F2C19EEB1AC0074DEEE /* ATRRandomNumber */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ATRRandomNumber; sourceTree = BUILT_PRODUCTS_DIR; };
 		03292F2F19EEB1AC0074DEEE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		03292F3619EEC34D0074DEEE /* ATRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATRItem.h; sourceTree = "<group>"; };
+		03292F3719EEC34D0074DEEE /* ATRItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATRItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				03292F2F19EEB1AC0074DEEE /* main.m */,
+				03292F3619EEC34D0074DEEE /* ATRItem.h */,
+				03292F3719EEC34D0074DEEE /* ATRItem.m */,
 			);
 			path = ATRRandomNumber;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03292F3819EEC34D0074DEEE /* ATRItem.m in Sources */,
 				03292F3019EEB1AC0074DEEE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
