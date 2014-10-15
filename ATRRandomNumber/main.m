@@ -10,7 +10,7 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        
+        NSMutableArray *randomArray = [[NSMutableArray alloc] init];
     }
     return 0;
 }
