@@ -27,4 +27,11 @@
 
 -(NSDate *)dateCreated;
 
+-(instancetype)initWithItemName:(NSString *) name
+                 valueInDollars:(int)value
+                   serialNumber:(NSString *)sNumber;
+
+-(instancetype)initWithItemName:(NSString *)name;
+
+
 @end

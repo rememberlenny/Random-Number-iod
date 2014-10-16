@@ -10,13 +10,21 @@
 
 @implementation ATRItem
 
-
 -(instancetype)initWithItemName:(NSString *) name
                  valueInDollars:(int)value
-                   serialNumber:(NSString *)sNumber;
+                   serialNumber:(NSString *)sNumber{
+    
+    self = [super init];
 
--(instancetype)initWithItemName:(NSString *)name;
-
+    if (self) {
+        _itemName = name;
+        _serialNumber = sNumber;
+        _valueInDollars = value;
+        _dateCreated = [[NSDate alloc] init];
+    }
+    
+    return self;
+}
 
 -(void)setItemName:(NSString *)str
 {
