@@ -22,7 +22,7 @@
 -(void)setSerialNumber:(NSString *)str;
 -(NSString *)serialNumber;
 
--(void)setValueInDollarsName:(int) v;
+-(void)setValueInDollars:(int) v;
 -(int)valueInDollars;
 
 -(NSDate *)dateCreated;

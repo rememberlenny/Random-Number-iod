@@ -27,7 +27,7 @@
     return _serialNumber;
 }
 
--(void)setValueInDollarsName:(int) v{
+-(void)setValueInDollars:(int) v{
     _valueInDollars = v;
 }
 
