@@ -37,6 +37,34 @@
     return [self initWithItemName:@"Item"];
 }
 
++(instancetype)randomItem
+{
+    NSArray *randomAdjectiveList = @[@"Fluffy", @"Rusty", @"Shiny"];
+    NSArray *randomNounList = @[@"Dog", @"Wrench", @"Bowl"];
+    
+    NSInteger adjectiveIndex = arc4random() % [randomAdjectiveList count];
+    NSInteger nounIndex = arc4random() % [randomNounList count];
+    
+    NSString *randomName = [NSString stringWithFormat:@"%@ %@",
+                            [randomAdjectiveList objectAtIndex:adjectiveIndex],
+                            [randomNounList objectAtIndex:nounIndex]];
+    
+    int randomValue = arc4random() % 100;
+    
+    NSString *randomSerialNumber = [NSString stringWithFormat: @"%c%c%c%c%c",
+                                    'O' + arc4random() % 10,
+                                    'A' + arc4random() % 26,
+                                    'O' + arc4random() % 10,
+                                    'A' + arc4random() % 26,
+                                    'O' + arc4random() % 10];
+    
+    ATRItem *newItem = [[self alloc] initWithItemName:randomName
+                                       valueInDollars:randomValue
+                                         serialNumber:randomSerialNumber];
+    
+    return newItem;
+}
+
 -(void)setItemName:(NSString *)str
 {
     _itemName = str;
