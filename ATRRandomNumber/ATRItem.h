@@ -16,7 +16,7 @@
     int _valueInDollars;
     
     ATRItem *_containedItem;
-    ATRItem *_container;
+    __weak ATRItem *_container;
 }
 
 -(void)setItemName:(NSString *)str;
