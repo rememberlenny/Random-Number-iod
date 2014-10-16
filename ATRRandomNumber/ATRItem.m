@@ -10,6 +10,14 @@
 
 @implementation ATRItem
 
+
+-(instancetype)initWithItemName:(NSString *) name
+                 valueInDollars:(int)value
+                   serialNumber:(NSString *)sNumber;
+
+-(instancetype)initWithItemName:(NSString *)name;
+
+
 -(void)setItemName:(NSString *)str
 {
     _itemName = str;
@@ -39,7 +47,7 @@
     return _dateCreated;
 }
 
-- (NSString *)description
+-(NSString *)description
 {
     NSString *descriptionString =
     [[NSString alloc] initWithFormat:@"%@ (%@): Worth $%d, recorded on %@",
