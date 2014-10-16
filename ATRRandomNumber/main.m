@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ATRItem.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -20,6 +21,10 @@ int main(int argc, const char * argv[]) {
         for (NSString *randomString in randomArray){
             NSLog(@"String is %@", randomString);
         }
+        
+        ATRItem *item = [[ATRItem alloc] init];
+        NSLog(@"%@ %@ %@ %d", [item itemName], [item dateCreated],
+                              [item serialNumber], [item valueInDollars]);
         
         randomArray = nil;
     }
