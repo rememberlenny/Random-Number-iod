@@ -10,33 +10,17 @@
 
 @interface ATRItem : NSObject
 {
-    NSString *_itemName;
-    NSString *_serialNumber;
-    NSDate *_dateCreated;
-    int _valueInDollars;
-    
-    ATRItem *_containedItem;
-    __weak ATRItem *_container;
 }
 
--(void)setItemName:(NSString *)str;
--(NSString *)itemName;
+@property ATRItem *containedItem;
+@property ATRItem *container;
 
--(void)setSerialNumber:(NSString *)str;
--(NSString *)serialNumber;
-
--(void)setValueInDollars:(int) v;
--(int)valueInDollars;
-
--(NSDate *)dateCreated;
+@property NSString *itemName;
+@property NSString *serialNumber;
+@property int valueInDollars;
+@property NSDate *dateCreated;
 
 +(instancetype)randomItem;
-
--(void)setContainedItem:(ATRItem *)item;
--(ATRItem *)containedItem;
-
--(void)setContainer:(ATRItem *)item;
--(ATRItem *)container;
 
 -(instancetype)initWithItemName:(NSString *) name
                  valueInDollars:(int)value
