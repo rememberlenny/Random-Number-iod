@@ -82,4 +82,10 @@
     NSLog(@"Destroyed: %@", self);
 }
 
+-(void)setContainedItem:(ATRItem *)containedItem
+{
+    _containedItem = containedItem;
+    self.containedItem.container = self;
+}
+
 @end
