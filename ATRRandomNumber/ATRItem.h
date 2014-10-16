@@ -12,13 +12,13 @@
 {
 }
 
-@property ATRItem *containedItem;
-@property ATRItem *container;
+@property (nonatomic) ATRItem *containedItem;
+@property (nonatomic) ATRItem *container;
 
-@property NSString *itemName;
-@property NSString *serialNumber;
-@property int valueInDollars;
-@property NSDate *dateCreated;
+@property (nonatomic) NSString *itemName;
+@property (nonatomic) NSString *serialNumber;
+@property (nonatomic) int valueInDollars;
+@property (nonatomic) NSDate *dateCreated;
 
 +(instancetype)randomItem;
 
