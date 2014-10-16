@@ -25,8 +25,14 @@ int main(int argc, const char * argv[]) {
         ATRItem *item = [[ATRItem alloc] initWithItemName: @"Red Sofa"
                                            valueInDollars:100
                                              serialNumber:@"A1B2C"];
-        
         NSLog(@"%@", item);
+        
+        ATRItem *itemWithName = [[ATRItem alloc] initWithItemName: @"Blue Sofa"];
+        NSLog(@"%@", itemWithName);
+        
+        ATRItem *itemWithNoName = [[ATRItem alloc] init];
+        NSLog(@"%@", itemWithNoName);
+        
         
         randomArray = nil;
     }
