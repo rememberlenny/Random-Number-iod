@@ -32,6 +32,11 @@
                      serialNumber:@""];
 }
 
+-(instancetype)init
+{
+    return [self initWithItemName:@"Item"];
+}
+
 -(void)setItemName:(NSString *)str
 {
     _itemName = str;
