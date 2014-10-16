@@ -17,11 +17,11 @@ int main(int argc, const char * argv[]) {
             ATRItem *item = [ATRItem randomItem];
             [randomArray addObject:item];
         }
-        
+
         for (ATRItem *item in randomArray){
             NSLog(@"%@", item);
         }
-        
+
         randomArray = nil;
     }
     return 0;
