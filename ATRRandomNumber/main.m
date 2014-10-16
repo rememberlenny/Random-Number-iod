@@ -24,12 +24,12 @@ int main(int argc, const char * argv[]) {
         
         ATRItem *item = [[ATRItem alloc] init];
         
-        [item setItemName: @"Red Sofa"];
-        [item setSerialNumber: @"A1B2C"];
-        [item setValueInDollars: 100];
+        item.itemName = @"Red Sofa";
+        item.serialNumber = @"A1B2C";
+        item.valueInDollars = 100;
         
-        NSLog(@"%@ %@ %@ %d", [item itemName], [item dateCreated],
-                              [item serialNumber], [item valueInDollars]);
+        NSLog(@"%@ %@ %@ %d", item.itemName, item.dateCreated,
+                              item.serialNumber, item.valueInDollars);
         
         randomArray = nil;
     }
