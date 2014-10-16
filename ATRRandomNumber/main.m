@@ -22,11 +22,9 @@ int main(int argc, const char * argv[]) {
             NSLog(@"String is %@", randomString);
         }
         
-        ATRItem *item = [[ATRItem alloc] init];
-        
-        item.itemName = @"Red Sofa";
-        item.serialNumber = @"A1B2C";
-        item.valueInDollars = 100;
+        ATRItem *item = [[ATRItem alloc] initWithItemName: @"Red Sofa"
+                                           valueInDollars:100
+                                             serialNumber:@"A1B2C"];
         
         NSLog(@"%@", item);
         
