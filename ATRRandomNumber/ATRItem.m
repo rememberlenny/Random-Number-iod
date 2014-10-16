@@ -65,6 +65,27 @@
     return newItem;
 }
 
+-(void)setContainedItem:(ATRItem *)item
+{
+    _containedItem = item;
+    item.container = self;
+}
+
+-(ATRItem *)containedItem
+{
+    return _containedItem;
+}
+
+-(void)setContainer:(ATRItem *)item
+{
+    _container = item;
+}
+
+-(ATRItem *)container
+{
+    return _container;
+}
+
 -(void)setItemName:(NSString *)str
 {
     _itemName = str;

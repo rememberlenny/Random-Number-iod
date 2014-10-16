@@ -13,11 +13,22 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSMutableArray *randomArray = [[NSMutableArray alloc] init];
         
-        for (int i = 0; i < 10; i++){
-            ATRItem *item = [ATRItem randomItem];
-            [randomArray addObject:item];
-        }
+//        for (int i = 0; i < 10; i++){
+//            ATRItem *item = [ATRItem randomItem];
+//            [randomArray addObject:item];
+//        }
 
+        ATRItem *backpack = [[ATRItem alloc] initWithItemName:@"Backpack"];
+        [randomArray addObject:backpack];
+        
+        ATRItem *calculator = [[ATRItem alloc] initWithItemName:@"Calculator"];
+        [randomArray addObject:calculator];
+        
+        backpack.containedItem = calculator;
+        
+        backpack = nil;
+        calculator = nil;
+        
         for (ATRItem *item in randomArray){
             NSLog(@"%@", item);
         }

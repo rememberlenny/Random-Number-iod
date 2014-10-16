@@ -14,6 +14,9 @@
     NSString *_serialNumber;
     NSDate *_dateCreated;
     int _valueInDollars;
+    
+    ATRItem *_containedItem;
+    ATRItem *_container;
 }
 
 -(void)setItemName:(NSString *)str;
@@ -28,6 +31,12 @@
 -(NSDate *)dateCreated;
 
 +(instancetype)randomItem;
+
+-(void)setContainedItem:(ATRItem *)item;
+-(ATRItem *)containedItem;
+
+-(void)setContainer:(ATRItem *)item;
+-(ATRItem *)container;
 
 -(instancetype)initWithItemName:(NSString *) name
                  valueInDollars:(int)value
