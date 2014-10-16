@@ -28,8 +28,7 @@ int main(int argc, const char * argv[]) {
         item.serialNumber = @"A1B2C";
         item.valueInDollars = 100;
         
-        NSLog(@"%@ %@ %@ %d", item.itemName, item.dateCreated,
-                              item.serialNumber, item.valueInDollars);
+        NSLog(@"%@", item);
         
         randomArray = nil;
     }
