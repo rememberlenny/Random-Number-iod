@@ -22,6 +22,7 @@ int main(int argc, const char * argv[]) {
             NSLog(@"%@", item);
         }
 
+        NSLog(@"Setting items to nil...");
         randomArray = nil;
     }
     return 0;
